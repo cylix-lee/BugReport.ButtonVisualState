@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BugReport.ButtonVisualState.MainPage">
+    <Grid Margin="12" 
+          HorizontalOptions="CenterAndExpand" 
+          VerticalOptions="CenterAndExpand" 
+          ColumnDefinitions="*, *"
+          ColumnSpacing="80">
+        <VerticalStackLayout Grid.Column="0" Spacing="20">
+            <Label Text="What I expect:" FontSize="Large" />
+            <Button Text="Button VisualState set to `Pressed` when pressed, and reset to `Normal` when released."
+                    Clicked="ResetButtonVisualState"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Column="1" Spacing="20">
+            <Label Text="What Buttons act now:" FontSize="Large"/>
+            <Button Text="Button VisualState set to `Pressed` when pressed, and will not reset automatically."/>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
